@@ -39,7 +39,7 @@ const SearchInput = ({videos , search}) => {
     </button>
     <h1>
       {
-        videos[0] ? videos[0] : 'No hay videos'
+        videos[0] ? videos[0] : 'No loaded videos'
       }
     </h1>
   </div>
