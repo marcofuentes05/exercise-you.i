@@ -10,4 +10,6 @@ yarn start
 It seems to be a problem regarding YoutTube API with CORS requests: it blocks them, so I was not able to fetch any request from them. Although, this project still is able to play/pause any given video given its url and has the whole infrastructure to work properly if the API eventually accepts CORS.
 
 Evidence: 
+
+
 ![Evidence](evidence.png)

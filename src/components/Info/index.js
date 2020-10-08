@@ -6,14 +6,14 @@ import * as videosActions from '../../Utils/actions/videos';
 const Data = ( { data } ) => (
   <div>
     <h1>
-      {data.title /* VIDEO TITLE IF NOT BLOCKED BY CORS */ }
+      Title: { data ? data.title : 'None' /* VIDEO TITLE IF NOT BLOCKED BY CORS */ }
     </h1>
-    <h1>
-      {data.description /* VIDEO DESCRIPTION IF NOT BLOCKED BY CORS */ }
-    </h1>
-    <h1>
-      {data.channel /* VIDEO CHANNEL IF NO BLOCKED BY CORS */ }
-    </h1>
+    <h2>
+      Description: { data ? data.description : 'None' /* VIDEO DESCRIPTION IF NOT BLOCKED BY CORS */ }
+    </h2>
+    <h3>
+      Channel: { data ? data.channel : 'None' /* VIDEO CHANNEL IF NO BLOCKED BY CORS */ }
+    </h3>
 
   </div>
 )
