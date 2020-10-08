@@ -4,13 +4,10 @@ import * as selectors from '../../Utils/reducers/index'
 import * as videosActions from '../../Utils/actions/videos'
 import youtube from '../../Utils/youtube'
 
-
- 
-
 const handleSubmit = async (name) => {
-  console.log('ya en hl')
   try{
-    const response = await youtube.get('/search' , {
+    const response = await youtube.get('/search/' , {
+    mode : "no-cors", 
     params: {
       q: name
     }

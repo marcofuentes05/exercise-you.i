@@ -17,6 +17,6 @@ const Player = ({ url }) => {
 
 export default connect(
   (state) => ({
-    url: 'https://www.youtube.com/watch?v=ysz5S6PUM-U'
+    url: 'https://www.youtube.com/embed/ysz5S6PUM-U'
   })
 )(Player);
